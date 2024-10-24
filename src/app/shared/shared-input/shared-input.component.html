@@ -1,0 +1,11 @@
+<div [ngClass]="{'mb-4': !isTheLast, 'mb-6': isTheLast}">
+  <label for={{name}} class="block text-sm font-medium text-gray-700">{{ label }}:</label>
+  <input 
+    [attr.type]="type"
+    [attr.name]="name" 
+    [attr.id]="name" 
+    [attr.required]="required" 
+    [attr.placeholder]="placeholder"  
+    class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+  />
+</div>
